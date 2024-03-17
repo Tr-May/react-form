@@ -5,6 +5,7 @@ export const Form = () => {
   return (
     <div className="container my-5 d-flex align-items-center">
       <form>
+        {/* username  */}
         <div className="mb-3">
           <label htmlFor="username" className="form-label">
             User Name :
@@ -17,6 +18,7 @@ export const Form = () => {
           />
         </div>
 
+        {/* email  */}
         <div className="mb-3">
           <label htmlFor="email" className="form-label">
             Email address
@@ -45,15 +47,30 @@ export const Form = () => {
         <div className="mb-3">
           <label className="form-label">Gender</label>
           <div className="form-check">
-            <input className="form-check-input" type="radio" name="gender" />
+            <input
+              className="form-check-input"
+              type="radio"
+              name="gender"
+              value="male"
+            />
             <label className="form-check-label">Male</label>
           </div>
           <div className="form-check">
-            <input className="form-check-input" type="radio" name="gender" />
+            <input
+              className="form-check-input"
+              type="radio"
+              name="gender"
+              value="female"
+            />
             <label className="form-check-label">Female</label>
           </div>
           <div className="form-check">
-            <input className="form-check-input" type="radio" name="gender" />
+            <input
+              className="form-check-input"
+              type="radio"
+              name="gender"
+              value="other"
+            />
             <label className="form-check-label">Other</label>
           </div>
         </div>
