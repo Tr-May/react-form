@@ -3,8 +3,9 @@ import React, { useState } from "react";
 export const Form = () => {
   const [formData, setFormData] = useState({});
   return (
-    <div className="container my-5 d-flex align-items-center">
-      <form>
+    <div className="container mb-2 d-flex flex-column align-items-center">
+      <form className="border px-5 w-50 py-3">
+        <h1 className="text-center text-primary mb-3">Form Handling</h1>
         {/* username  */}
         <div className="mb-3">
           <label htmlFor="username" className="form-label">
