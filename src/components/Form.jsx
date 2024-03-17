@@ -9,14 +9,24 @@ export const Form = () => {
           <label htmlFor="username" className="form-label">
             User Name :
           </label>
-          <input type="text" className="form-control" id="username" />
+          <input
+            type="text"
+            className="form-control"
+            id="username"
+            name="username"
+          />
         </div>
 
         <div className="mb-3">
           <label htmlFor="email" className="form-label">
             Email address
           </label>
-          <input type="email" className="form-control" id="email" />
+          <input
+            type="email"
+            className="form-control"
+            id="email"
+            name="email"
+          />
         </div>
 
         {/* occupation */}
@@ -80,7 +90,7 @@ export const Form = () => {
           </div>
         </div>
 
-        <input className="btn btn-primary" type="submit" value="Login" />
+        <input className="btn btn-primary" type="submit" value="Submit" />
       </form>
     </div>
   );
